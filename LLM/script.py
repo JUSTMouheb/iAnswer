@@ -3,13 +3,15 @@ import os
 import requests
 key = load_dotenv()
 i=0
+prompts = {}
+messages=[]
 while 1 :
     i+=1
     prompt = input("Enter your text : ")
-    prompts = []
-    prompts.append(prompt)
-    r = requests.post('https://ollama.com/api/generate', 
+    messages.append({"role": "user","content": prompt})
+    r = requests.post('https://ollama.com/api/chat', 
                         headers= {"Authorization": "Bearer " + os.environ['OLLAMA_API_KEY']},
-                        json= {"model": "gpt-oss:120b", "prompt": prompts[len(prompts)-1], "stream": False })
-    print(r.text)
-    
+                        json= {"model": "gpt-oss:120b", "messages": messages, "stream": False })
+    response_llm=(r.json()["message"]["content"])
+    messages.append({"role":"assistant","content": response_llm})
+    print(response_llm)
