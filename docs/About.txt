@@ -1,0 +1,48 @@
+ABOUT US
+========
+
+We build AI that actually works in production.
+
+Nexalytics was founded on a simple conviction: most AI stays in demo mode.
+We ship systems that hold up under real-world load — anomaly detection,
+intelligent automation, and language interfaces built for industrial-grade
+reliability.
+
+------------------------------------------------------------------------
+
+WHAT DRIVES US
+
+Production-first AI
+No toy demos. Every model we ship is benchmarked, monitored, and optimized
+for edge cases.
+
+Systems thinking
+We design full-stack AI pipelines, not isolated models — from ingestion to
+inference to observability.
+
+Measurable outcomes
+Every engagement ties to a business metric. ROC-AUC curves are our love
+language.
+
+------------------------------------------------------------------------
+
+THE TEAM
+
+Mouheb Hidouri — Chief Executive Officer (Founder)
+Sarah Kim       — Chief Technology Officer (Co-founder)
+Luca Moretti    — VP of Engineering (Core team)
+
+------------------------------------------------------------------------
+
+BY THE NUMBERS
+
+3+   Years of R&D
+40+  Models shipped
+98%  Uptime SLA
+12   Enterprise clients
+
+------------------------------------------------------------------------
+
+Headquartered in Berlin, Germany. Remote-first, hiring across the EU.
+If you are building serious AI infrastructure and want to work with people
+who care about the craft — we want to hear from you.

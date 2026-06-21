@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
 import os
 import requests
+f=open("docs/About.txt",'r')
+docs=f.read()
 key = load_dotenv()
-i=0
-prompts = {}
 messages=[]
+messages.append({"role":"system","content":"You are support for Nexalytics. Answer only from these docs: " + docs})
 while 1 :
-    i+=1
     prompt = input("Enter your text : ")
     messages.append({"role": "user","content": prompt})
     r = requests.post('https://ollama.com/api/chat', 
