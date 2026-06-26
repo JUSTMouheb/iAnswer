@@ -6,6 +6,9 @@ docs=f.read()
 key = load_dotenv()
 messages=[]
 messages.append({"role":"system","content":"You are support for Nexalytics. Answer only from these docs: " + docs})
+embeddings = requests.post("http://localhost:11434/api/embed",
+                         json={"model": "mxbai-embed-large", "input": "hello world"})
+print(embeddings)
 while 1 :
     prompt = input("Enter your text : ")
     messages.append({"role": "user","content": prompt})
