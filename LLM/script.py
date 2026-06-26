@@ -32,7 +32,6 @@ while 1 :
     r = requests.post('https://ollama.com/api/chat', 
                         headers= {"Authorization": "Bearer " + os.environ['OLLAMA_API_KEY']},
                         json= {"model": "gpt-oss:120b", "messages": [system_msg] + messages, "stream": False })
-    print(messages)
     response_llm=(r.json()["message"]["content"])
     messages.append({"role":"assistant","content": response_llm})
     print(response_llm) 
