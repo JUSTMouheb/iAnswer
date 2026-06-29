@@ -6,7 +6,9 @@ CLI agent that chats with an LLM , remembers the conversation and answers from a
 ## Setup & Run
 pip install -r requirements.txt
 # create a .env with your OLLAMA_API_KEY
+ollama pull mxbai-embed-large
 python LLM/script.py
 ## Tools Used
 - Ollama Cloud API KEY
+- Ollama (mxbai-embed-large) : Embed Model
 - Python-dotenv to read .env variables
