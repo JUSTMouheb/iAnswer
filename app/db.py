@@ -37,6 +37,5 @@ if __name__ == "__main__" :
     print("new conversation id:", cid)
     print("message sample :", get_messages(cid))
     conn.commit()
-
-cur.close()
-conn.close()
+    cur.close()
+    conn.close()
