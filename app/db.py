@@ -31,10 +31,12 @@ try:
 except:
     print("Database not connected successfully")
 cur = conn.cursor()
-cid = create_conversation()
-add_message("Hello World","user",cid)
-print("new conversation id:", cid)
-print("message sample :", get_messages(cid))
-conn.commit()
+if __name__ == "__main__" :
+    cid = create_conversation()
+    add_message("Hello World","user",cid)
+    print("new conversation id:", cid)
+    print("message sample :", get_messages(cid))
+    conn.commit()
+
 cur.close()
 conn.close()
